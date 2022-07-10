@@ -1,0 +1,12 @@
+#端口
+server:
+  port: 4001
+# provider config
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka
+# 别名 provider
+spring:
+  application:
+    name: provider-01

@@ -1,0 +1,26 @@
+#别名
+spring:
+  application:
+    name: consumer-01
+  main:
+#当遇到同样名字的时候，是否允许覆盖注册
+    allow-bean-definition-overriding: true
+
+server:
+  port: 9001
+
+# provider config
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka
+
+#配置RocketMQ参数
+system-parameters:
+  rocketmq:
+    ipPort: 127.0.0.1:9876
+    topic: ROCKETMQ_SONG_TOPIC
+    gd_produce_group: ROCKETMQ_SONG_TOPIC
+dingding-parmeters:
+  dingding_mobiles: 15656112757
+  dingding_api_url: https://oapi.dingtalk.com/robot/send?access_token=8bc63dde817067241c978977cbff64168db667ad14eb4ccb4eb744d612da280c

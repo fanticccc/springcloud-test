@@ -1,0 +1,15 @@
+#服务端口号
+server:
+  port: 2222
+#别名
+spring:
+  application:
+    name: eureka-server-02
+
+#eureka配置
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:1111/eureka/,http://localhost:3333/eureka/

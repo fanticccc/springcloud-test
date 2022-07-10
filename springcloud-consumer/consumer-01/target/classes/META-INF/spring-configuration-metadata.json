@@ -1,0 +1,30 @@
+{
+  "groups": [
+    {
+      "name": "system-parameters.rocketmq",
+      "type": "com.exc.song.config.rocketmq.RocketMqProperties",
+      "sourceType": "com.exc.song.config.rocketmq.RocketMqProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "system-parameters.rocketmq.gd-produce-group",
+      "type": "java.lang.String",
+      "sourceType": "com.exc.song.config.rocketmq.RocketMqProperties",
+      "defaultValue": ""
+    },
+    {
+      "name": "system-parameters.rocketmq.ip-port",
+      "type": "java.lang.String",
+      "sourceType": "com.exc.song.config.rocketmq.RocketMqProperties",
+      "defaultValue": "127.0.0.1:9876"
+    },
+    {
+      "name": "system-parameters.rocketmq.topic",
+      "type": "java.lang.String",
+      "sourceType": "com.exc.song.config.rocketmq.RocketMqProperties",
+      "defaultValue": ""
+    }
+  ],
+  "hints": []
+}
