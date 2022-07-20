@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 /**
- * @Author YSTen_SongJunBao
+ * @Author SongJunBao
  * @Description:
  * @Date 2022/6/14 10:16
  * @Version 1.0

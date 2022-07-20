@@ -16,11 +16,11 @@ import javax.annotation.Resource;
 import java.util.*;
 
 /**
- * @Author YSTen_SongJunBao
+ * @Author SongJunBao
  * @Description: 处理、发送钉钉消息
  * @Date 2022/4/1 10:46
  * @Version 1.0
- * com.ysten.cos.utils
+ * com.exc.song.service.impl
  */
 @Service
 @Slf4j

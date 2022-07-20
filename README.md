@@ -5,7 +5,7 @@ eureka 集群：
 provider:
      http://localhost:4001/provider/offer
      http://localhost:4001/provider/offer2
-consumer:
+consumer:c
      http://localhost:9001/consumer/getMsg
      http://localhost:9001/consumer/getMsg2
 调用远程服务：

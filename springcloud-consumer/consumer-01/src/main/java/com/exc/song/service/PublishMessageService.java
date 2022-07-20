@@ -1,11 +1,11 @@
 package com.exc.song.service;
 
 /**
- * @Author YSTen_SongJunBao
+ * @Author song
  * @Description:
  * @Date 2022/4/1 10:46
  * @Version 1.0
- * com.ysten.cos.utils
+ *com.exc.song.service
  */
 
 public interface PublishMessageService {

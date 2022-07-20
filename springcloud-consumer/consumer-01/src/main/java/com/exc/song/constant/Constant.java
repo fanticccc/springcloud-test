@@ -1,7 +1,7 @@
 package com.exc.song.constant;
 
 /**
- * @Author YSTen_SongJunBao
+ * @Author SongJunBao
  * @Description: 系统参数
  * @Date 2022/4/8 17:25
  * @Version 1.0

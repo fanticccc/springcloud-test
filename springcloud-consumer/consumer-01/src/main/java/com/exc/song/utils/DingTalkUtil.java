@@ -4,7 +4,7 @@ import com.exc.song.service.PublishMessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
- * @Author YSTen_SongJunBao
+ * @Author SongJunBao
  * @Description:
  * @Date 2022/4/8 17:16
  * @Version 1.0

@@ -6,7 +6,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 /**
- * @Author YSTen_SongJunBao
+ * @Author SongJunBao
  * @Description:
  * @Date 2022/3/25 18:14
  * @Version 1.0
@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
  */
 @Data
 @Component
-//@PropertySource("application.yml")
+@PropertySource("application.yml")
 @ConfigurationProperties(prefix = "system-parameters.rocketmq")
 
 public class RocketMqProperties {

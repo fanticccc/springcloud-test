@@ -7,7 +7,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 /**
- * @Author YSTen_SongJunBao
+ * @Author SongJunBao
  * @Description:
  * @Date 2022/2/21 16:12
  * @Version 1.0
