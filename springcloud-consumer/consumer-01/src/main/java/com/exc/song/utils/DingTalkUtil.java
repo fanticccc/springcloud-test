@@ -14,14 +14,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class DingTalkUtil {
 
     @Autowired
-    private static PublishMessageService publishMessageService ;
+    private static PublishMessageService publishMessageService;
 
-    public static void send (String content, String atMobile){
-        publishMessageService.sendToDingDingInfo(content,atMobile);
+    public static void send(String content, String atMobile) {
+        publishMessageService.sendToDingDingInfo(content, atMobile);
     }
 
-    public static String  taskLa(String str){
-        return str ;
+    public static String taskLa(String str) {
+        return str;
         //publishMessageService.sendToDingDingInfo(content,atMobile);
     }
 

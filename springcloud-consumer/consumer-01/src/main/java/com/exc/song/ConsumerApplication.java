@@ -1,4 +1,6 @@
 package com.exc.song;
+
+import lombok.EqualsAndHashCode;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,6 +8,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
+
 /**
  * @Author YSTen_SongJunBao
  * @Description:
@@ -21,10 +24,11 @@ public class ConsumerApplication {
     public static void main(String[] args) {
 
         SpringApplication.run(ConsumerApplication.class, args);
-       log.info("Method:ConsumerApplication,run ============= ConsumerServer starting success ============");
+        log.info("Method:ConsumerApplication,run ============= ConsumerServer starting success ============");
     }
+
     @Bean
-    RestTemplate restTemplate (){
+    RestTemplate restTemplate() {
         return new RestTemplate();
     }
 }

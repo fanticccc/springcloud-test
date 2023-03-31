@@ -16,12 +16,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProviderController {
 
     @GetMapping("/offer")
-    public String offerData(){
+    public String offerData() {
         return "hello im Provider ";
     }
 
     @GetMapping("/offer2")
-    public String offerData2(){
+    public String offerData2() {
         return "hello im Provider2 --->";
     }
 }

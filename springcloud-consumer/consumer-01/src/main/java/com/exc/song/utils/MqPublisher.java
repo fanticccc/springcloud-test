@@ -36,8 +36,10 @@ public class MqPublisher {
         this.rocketMqConfig = rocketMqConfig;
     }
 */
+
     /**
      * 发送消息
+     *
      * @param message
      */
     public void send(String message) {

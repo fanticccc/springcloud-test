@@ -19,9 +19,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @Slf4j
 public class ProviderApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ProviderApplication.class,args);
+        SpringApplication.run(ProviderApplication.class, args);
         log.info("Method:ProviderApplication : run ============= Provider Server starting success ============");
-
 
 
     }

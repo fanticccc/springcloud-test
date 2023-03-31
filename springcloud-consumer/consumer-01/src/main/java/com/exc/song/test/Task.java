@@ -12,6 +12,6 @@ public class Task implements Runnable {
     @Override
     public void run() {
         Thread.currentThread().setName("Task Thread ");
-        System.out.println(Thread.currentThread().getName()+"->do task ...");
+        System.out.println(Thread.currentThread().getName() + "->do task ...");
     }
 }

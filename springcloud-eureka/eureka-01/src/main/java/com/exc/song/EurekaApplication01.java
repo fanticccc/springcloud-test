@@ -17,7 +17,7 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 @Slf4j
 public class EurekaApplication01 {
     public static void main(String[] args) {
-        SpringApplication.run(EurekaApplication01.class,args);
+        SpringApplication.run(EurekaApplication01.class, args);
         log.info("Method:EurekaApplication-1 : run ============= starting success ============");
     }
 }

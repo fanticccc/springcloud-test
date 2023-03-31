@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
  * @Version 1.0
  * com.exc.song.service
  */
-@FeignClient(name = "provider-01",url = "http://localhost:4001/")
+@FeignClient(name = "provider-01", url = "http://localhost:4001/")
 public interface TestClient {
     @GetMapping("/provider/offer2")
     String offerData();

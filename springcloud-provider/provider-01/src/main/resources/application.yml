@@ -1,7 +1,7 @@
 #端口
 server:
   port: 4001
-# provider config
+# provider config  test 111 master
 eureka:
   client:
     service-url:

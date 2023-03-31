@@ -36,8 +36,8 @@ public class TestConsumer {
             // 接收消息内容
             @Override
             public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> msgList, ConsumeConcurrentlyContext consumeConcurrentlyContext) {
-                for (MessageExt msg:msgList) {
-                    log.info("接收到的消息：{}",new String(msg.getBody()));
+                for (MessageExt msg : msgList) {
+                    log.info("接收到的消息：{}", new String(msg.getBody()));
                 }
                 return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
             }

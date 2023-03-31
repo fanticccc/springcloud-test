@@ -10,7 +10,7 @@ package com.exc.song.test;
 
 public class Demo1 {
     public static void main(String[] args) {
-        System.out.println("name=="+Thread.currentThread().getName());
+        System.out.println("name==" + Thread.currentThread().getName());
         MyThread thread = new MyThread();
         thread.start();
         new Thread(new Task()).start();

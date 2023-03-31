@@ -3,7 +3,7 @@ spring:
   application:
     name: consumer-01
   main:
-#当遇到同样名字的时候，是否允许覆盖注册
+    #当遇到同样名字的时候，是否允许覆盖注册
     allow-bean-definition-overriding: true
 
 server:
@@ -22,8 +22,8 @@ system-parameters:
     topic: ROCKETMQ_SONG_TOPIC
     gd_produce_group: ROCKETMQ_SONG_TOPIC
   thread-pool:
-    
-    
+
+
 dingding-parmeters:
   dingding_mobiles: 15656112757
   dingding_api_url: https://oapi.dingtalk.com/robot/send?access_token=8bc63dde817067241c978977cbff64168db667ad14eb4ccb4eb744d612da280c

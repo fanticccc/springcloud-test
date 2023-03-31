@@ -36,19 +36,19 @@ import java.util.concurrent.ThreadLocalRandom;
 public class ConsumerController {
 
     @Autowired
-    private RestTemplate restTemplate ;
+    private RestTemplate restTemplate;
 
     @Autowired
-    private DiscoveryClient discoveryClient ;
+    private DiscoveryClient discoveryClient;
 
     @Autowired
-    private MqPublisher publisher ;
+    private MqPublisher publisher;
 
     @Resource
-    private TestClient testClient ;
+    private TestClient testClient;
 
     @GetMapping("/getMsg")
-    public String getData(String name){
+    public String getData(String name) {
         List<ServiceInstance> severList = discoveryClient.getInstances("provider-01");
         System.out.println(severList.toString());
         /**
@@ -59,36 +59,37 @@ public class ConsumerController {
         String host = instance.getHost();
         int port = instance.getPort();
         String s = restTemplate.getForObject("http://" + host + ":" + port + "/provider/offer?name={1}", String.class, name);
-        log.info("Method: ConsumerController message :{}",s);
+        log.info("Method: ConsumerController message :{}", s);
         return s;
     }
 
     @GetMapping("/getMsg2")
-    public String getData2(String str){
-        String s = testClient.offerData()+"()"+str;
-        return s ;
+    public String getData2(String str) {
+        String s = testClient.offerData() + "()" + str;
+        return s;
     }
 
     /**
      * 测试发送MQ
+     *
      * @param str
      */
     @GetMapping("/send")
-    public void sendMsg(String str){
+    public void sendMsg(String str) {
         publisher.send(str);
     }
 
     @PostMapping("consumerMsg")
-    public void getConsumer(){
+    public void getConsumer() {
 
     }
 
     public static void main(String[] args) {
         System.out.println("value =" + MyThread.threadLocal.get());
         List<List<Integer>> list0 = new ArrayList<>();
-        Integer []arr1 = {1,3,5};
-        Integer []arr2 = {2,3,5};
-        Integer []arr3 = {4,3,5};
+        Integer[] arr1 = {1, 3, 5};
+        Integer[] arr2 = {2, 3, 5};
+        Integer[] arr3 = {4, 3, 5};
         List<Integer> list1 = Arrays.asList(arr1);
         List list11 = new ArrayList(list1);
         List<Integer> list2 = Arrays.asList(arr2);
@@ -99,8 +100,9 @@ public class ConsumerController {
         list0.add(list22);
         list0.add(list33);
         List<Integer> list = retainElementList(list0);
-        System.out.println("list : "+list.toString());
+        System.out.println("list : " + list.toString());
     }
+
     public static List<Integer> retainElementList(List<List<Integer>> elementLists) {
         Optional<List<Integer>> result = elementLists.parallelStream()
                 .filter(elementList -> elementList != null && ((List) elementList).size() != 0)

@@ -22,33 +22,33 @@ import java.util.*;
 @RestController
 public class DingTalkTestController {
 
-@Autowired
-private PublishMessageService publishMessageService ;
+    @Autowired
+    private PublishMessageService publishMessageService;
 
     @GetMapping("talk")
-    public String talk(String str){
-        return DingTalkUtil.taskLa("发送消息："+str);
+    public String talk(String str) {
+        return DingTalkUtil.taskLa("发送消息：" + str);
     }
 
     @GetMapping("send1")
-    public void sendMsg1(String str){
-         DingTalkUtil.send("ding测试消息1:"+str,null);
+    public void sendMsg1(String str) {
+        DingTalkUtil.send("ding测试消息1:" + str, null);
     }
 
     @GetMapping("send2")
-    public void sendMsg2(String str){
-        publishMessageService.sendToDingDingInfo("ding测试消息2:"+str,null);
+    public void sendMsg2(String str) {
+        publishMessageService.sendToDingDingInfo("ding测试消息2:" + str, null);
     }
 
     public static void main(String[] args) {
         Set<String> set = new HashSet();
         Iterator<String> iterator = set.iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             String next = iterator.next();
             System.out.println(next);
 
         }
-        HashMap<String,String> map = new HashMap<>();
+        HashMap<String, String> map = new HashMap<>();
         Map<String, String> map1 = Collections.synchronizedMap(map);
 
 

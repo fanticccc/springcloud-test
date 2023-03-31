@@ -11,6 +11,7 @@ package com.exc.song.service;
 public interface PublishMessageService {
     /**
      * 发送钉钉消息
+     *
      * @param content
      * @param atMobile
      */
